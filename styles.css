@@ -1,6 +1,13 @@
 /* styles.css */
 body {}
-blockquote {}
-.bilbo {}
-.gollum {}
+blockquote { 
+  float:left;
+  position:relative;
+}
+.bilbo {
+  
+}
+.gollum { 
+  float:right;
+}
 .prose {whitespace:pre;}
