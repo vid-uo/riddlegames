@@ -1,6 +1,13 @@
 /* styles.css */
 body {}
+#conversation {
+  display:block; 
+}
+footer {
+  clear:both;
+}
 blockquote { 
+  clear:both;
   float:left;
   position:relative;
 }
@@ -11,3 +18,4 @@ blockquote {
   float:right;
 }
 .prose { white-space:pre;}
+
