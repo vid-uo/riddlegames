@@ -1,27 +1,37 @@
+
 /* styles.css */
-body { 
-	max-width:50%;
-	min-width:500px;
+body {
+  max-width:50%;
+  min-width:500px;
+  background-color:#000;
 }
-article {
-  background-color:#333;
-  display:block; 
-}
-footer {
+
+blockquote {
+  border:ridge 5px #ffffff;
+  -moz-border-radius: 0px 18px 18px 0px;
+  -webkit-border-radius: 0px 18px 18px 0px;
+  border-radius: 0px 18px 18px 0px;
   clear:both;
-}
-blockquote { 
-  clear:both;
+  color:white;
   float:left;
   max-width:40%;
-	min-width:200px;
+  min-width:200px;
   position:relative;
+  padding:.6em;  
 }
-.bilbo {
+
+.bilbo { }
+
+.gollum {
+  border-color:#999;
+  -moz-border-radius: 18px 0px 0px 18px;
+  -webkit-border-radius: 18px 0px 0px 18px;
+  border-radius: 18px 0px 0px 18px;
+  float:right;
+  text-align:right;
   
 }
-.gollum { 
-  float:right;
-}
-.prose { white-space:pre;}
 
+.prose { white-space:pre; }
+
+footer { clear:both; }
