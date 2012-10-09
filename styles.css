@@ -10,4 +10,4 @@ blockquote {
 .gollum { 
   float:right;
 }
-.prose {whitespace:pre;}
+.prose { white-space:pre;}
