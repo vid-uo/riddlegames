@@ -1,8 +1,8 @@
 /* styles.css */
 body {
+  background-color:#000;
   max-width:50%;
   min-width:500px;
-  background-color:#000;
 }
 
 h1, h2, h3 {color:#FFF;}
@@ -50,14 +50,31 @@ blockquote {
   left:-.2em;
 }
 
-
 .bilbo:after, .gollum:after {
-  position:absolute;
-  left:auto;
   content:close-quote;
   font-size:4em;
+  left:auto;
   margin-left:.1em;
   margin-bottom:1em;
+  position:absolute;
+}
+
+blockquote cite {
+	display:block;
+  margin-left:-6.1em;
+  padding-right:.3em;
+  position:absolute;
+}
+
+blockquote cite:before {
+	content:'-';
+}
+
+.gollum cite {
+	display:block;
+  margin-right:-4.2em;
+	position:absolute;
+  right:0;
 }
 
 .prose { white-space:pre; }
