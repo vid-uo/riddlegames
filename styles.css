@@ -1,28 +1,93 @@
 /* styles.css */
-body { 
-	max-width:50%;
-	min-width:500px;
+body {
+  background-color:#2A1B20;
+  max-width:50%;
+  min-width:500px;
+  margin: 1em auto 1em auto;
 }
-article {
-  background-color:#261315;
-}
-footer {
+
+h1, h2, h3 {color:#FFF; 
+	text-align:center;
+	}
+
+h1 a {color:#FFF;}
+
+
+blockquote {
+  border:ridge 0 #000000;
   clear:both;
-}
-blockquote { 
-  clear:both;
+  color:white;
   float:left;
   max-width:40%;
-	min-width:200px;
   position:relative;
+  padding:1em;
 }
-.bilbo {
-	color:rgb(85%, 9%, 15%);
-  
-}
-.gollum { 
-  float:right;
-  color:rgb(99%, 93%, 93%);
-}
-.prose { white-space:pre;}
 
+.bilbo { 
+	border-left-width:5px;
+  padding-left:3em;
+  -moz-border-radius: 18px 0px 0px 18px;
+  -webkit-border-radius: 18px 0px 0px 18px;
+  border-radius: 18px 0px 0px 18px;
+  color:#2C9317;
+}
+
+.gollum {
+  -moz-border-radius: 0px 18px 18px 0px;
+  -webkit-border-radius: 0px 18px 18px 0px;
+  border-radius: 0px 18px 18px 0px;
+  border-color:#999;
+  border-right-width:5px;
+  float:right;
+  text-align:right;
+	padding-right:3em; 
+  color:#CA0811; 
+}
+
+.bilbo:before, .gollum:before {
+  position:absolute;
+  left:.2em;
+  font-size:4em;
+  content:open-quote;
+  margin-top:-20px;
+}
+
+.gollum:before {
+  left:-.2em;
+}
+
+.bilbo:after, .gollum:after {
+  content:close-quote;
+  font-size:4em;
+  left:auto;
+  margin-left:.1em;
+  margin-bottom:1em;
+  position:absolute;
+}
+
+blockquote cite {
+	display:block;
+  margin-left:-6.1em;
+  padding-right:.3em;
+  position:absolute;
+}
+
+blockquote cite:before {
+	content:'-';
+}
+
+.gollum cite {
+	display:block;
+  margin-right:-4.2em;
+	position:absolute;
+  right:0;
+}
+
+.prose { white-space:pre; }
+
+footer { clear:both; padding-top:5em;}
+
+footer p { color:#ffffff; }
+
+a:link {color:#ECD95A; }
+a:visited { color:#ED2C91; }
