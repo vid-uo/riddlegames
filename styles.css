@@ -4,8 +4,7 @@ body {
 	min-width:500px;
 }
 article {
-  background-color:#333;
-  display:block; 
+  background-color:#261315;
 }
 footer {
   clear:both;
@@ -18,10 +17,12 @@ blockquote {
   position:relative;
 }
 .bilbo {
+	color:rgb(85%, 9%, 15%);
   
 }
 .gollum { 
   float:right;
+  color:rgb(99%, 93%, 93%);
 }
 .prose { white-space:pre;}
 
